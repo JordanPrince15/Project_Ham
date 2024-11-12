@@ -1,0 +1,147 @@
+/* General page styling */
+
+body {
+  
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Header styling */
+header {
+    background-color: #1e1e1e;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logo and title */
+}
+
+/* Logo styling */
+.logo {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    padding-left: 20px;
+    padding-right: 90px;
+}
+
+header h1 {
+    color: #ff5722;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Top row container styling */
+.top-row {
+    display: flex;
+    gap: 20px; /* Space between widgets */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Space below the top row */
+}
+
+/* Bottom column container styling */
+.bottom-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between stacked widgets */
+}
+
+/* Widget styling */
+.widgetA {
+    background-color: #1f1f1f;
+    border: 2px solid #ff5722;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 200px; /* Fixed width for all widgets */
+    height: 200px; /* Fixed height for all widgets */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.3s ease;
+    position: relative; /* Make sure the text stays inside the widget */
+}
+
+/* Widget image container styling */
+.widgetA-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Image styling */
+.widgetA-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers entire container */
+    border-radius: 8px;
+}
+
+/* Text overlay styling */
+.widgetA-text {
+    position: absolute;
+    bottom: 70px; /* Positions the text near the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    /* background-color: rgba(0, 0, 0, 0.6); Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.widgetB {
+    background-color: #1f1f1f;
+    border: 2px solid #528806;
+    border-radius: 100px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 470px; /* Fixed width for all widgets */
+    height: 10px; /* Fixed height for all widgets */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.widgetA:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.widgetB:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .top-row {
+        flex-direction: center; /* Stacks widgets vertically on narrow screens */
+        align-items: center;
+    }
+
+    .widget {
+        width: 90%; /* Adjust width on smaller screens */
+        max-width: 300px;
+        height: auto;
+        padding: 15px;
+    }
+}
