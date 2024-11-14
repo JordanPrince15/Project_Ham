@@ -1,6 +1,10 @@
 /* General page styling */
 body {
     background-color: #121212;
+    /* background-image: url("background.png");
+    background-position: center;
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
     color: #ffffff;
     font-family: Arial, sans-serif;
     display: flex;
@@ -25,6 +29,73 @@ header {
     align-items: center;
     justify-content: center; /* Centers the logo and title horizontally */
     gap: 10px; /* Space between logo and title */
+}
+
+
+/* Main container */
+.main-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Side widgets styling */
+.side-widget {
+    background-color: #1f1f1f;
+    background-image: url("advert.gif");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: #ffffff;
+    width: 150px; /* Adjust width as needed */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+/* Left and right widget positions */
+/* .left-widget {
+    border-right: 2px solid #ff5722; /* Optional border for separation */
+/* } */
+
+/* .right-widget {
+    border-left: 2px solid #ff5722; /* Optional border for separation */
+/* } */  
+
+/* Center content styling */
+.center-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    width: 100%;
+    /* height: 30px; */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.footer-content {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center; /* Centers the logo and title horizontally */
+    gap: 10px; /* Space between logo and title */
+    margin-top: 10px;
+}
+
+footer p {
+    color:antiquewhite;
 }
 
 /* Adjusted logo styling */
@@ -55,6 +126,7 @@ header h1 a{
     display: flex;
     flex-direction: column;
     gap: 20px; /* Space between stacked widgets */
+    margin-bottom: 10px; /* Space below the top row */
 }
 
 /* Widget A styling */
